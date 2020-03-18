@@ -36,7 +36,7 @@ class NavBar(Base):
         self._register.click()    
 
     @property
-    def text_regiter(self):
+    def text_register(self):
         return self._register.text
 
     def click_home(self):
@@ -63,9 +63,12 @@ class Home(NavBar):
 
     
 
-class Login(NavBar):
+class Login(Base):
 
     def __init__(self, driver):
        NavBar.__init__(self,driver)
+       self._email = "email" #ID
+       self._password = "password" #ID
+       self._submit = "submit" #ID
        
 

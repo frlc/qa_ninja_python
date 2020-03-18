@@ -42,6 +42,6 @@ def verifica_url_login(context, page):
     dic = {
         'Login': 'http://projectdreamteam.pythonanywhere.com/login',
         'Register': 'http://projectdreamteam.pythonanywhere.com/register',
-        'Home': 'http://projectdreamteam.pythonanywhere.com'
+        'Home': 'http://projectdreamteam.pythonanywhere.com/'
         }
     assert dic[page] == context.navbar.get_url
