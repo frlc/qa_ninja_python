@@ -1,9 +1,13 @@
 Funcionalidade: Login
 
-Cenario: Efetuar login com sucesso
+@wip
+Cenario: Efetuar login sem sucesso
     Dado que acesse a pagina login
-    E efetuo o login
-        | chave | valor          |
-        | email | frlc@teste.com |
-        | senha | frlc           |
-    
+    Quando efetuo o login
+        | chave | valor              |
+        | email | fernando@teste.com |
+        | senha | teste              |
+    Então a mensagem deve ser exibida
+        """
+        Invalid email or password.
+        """

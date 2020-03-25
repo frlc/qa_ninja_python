@@ -15,7 +15,6 @@ Funcionalidade: Barra de navegação
     Quando clicko em "Register"
     Então devo ser direcionado para página login "Register"
 
-    @wip
     Cenário: Home presente na barra de navegação e click register
     Dado que acesse a pagina inicial
     Então o "Home" deve estar disponivel na página

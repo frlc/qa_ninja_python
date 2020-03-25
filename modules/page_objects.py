@@ -64,11 +64,19 @@ class Home(NavBar):
     
 
 class Login(Base):
-
     def __init__(self, driver):
-       NavBar.__init__(self,driver)
+       Base.__init__(self, driver)
+       self._url = 'http://projectdreamteam.pythonanywhere.com/login'
        self._email = "email" #ID
        self._password = "password" #ID
        self._submit = "submit" #ID
-       
-
+       self._message = "//div[contains(@class,'alert alert-info')]" #xpath
+    
+    def login(self, user, password):
+        self.driver.find_element_by_id(self._email).send_keys(user)
+        self.driver.find_element_by_id(self._password).send_keys(password)
+        self.driver.find_element_by_id(self._submit).click()
+        
+    @property
+    def get_message_login_invalid(self):
+        return self.driver.find_element_by_xpath(self._message).text
