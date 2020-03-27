@@ -1,22 +1,18 @@
 # language: pt
 
 Funcionalidade: Barra de navegação
-    
-    
-    Cenário: Login presente na barra de navegação e click login
-    Dado que acesse a pagina inicial
-    Então o "Login" deve estar disponivel na página
-    Quando clicko em "Login"
-    Então devo ser direcionado para página login "Login"
 
-    Cenário: Register presente na barra de navegação e click register
+Contexto: Acessar página
     Dado que acesse a pagina inicial
-    Então o "Register" deve estar disponivel na página
-    Quando clicko em "Register"
-    Então devo ser direcionado para página login "Register"
+    
+    @wip
+    Esquema do Cenário: "<Botão>" presente na barra de navegação e click "<Página>"
+        Então o "<Botão>" deve estar disponivel na página
+        Quando clicko em "<Botão>"
+        Então devo ser direcionado para página login "<Botão>"
 
-    Cenário: Home presente na barra de navegação e click register
-    Dado que acesse a pagina inicial
-    Então o "Home" deve estar disponivel na página
-    Quando clicko em "Home"
-    Então devo ser direcionado para página login "Home"
+        Exemplos: Botões na NavBar
+            | Botão    | Página          |
+            | Login    | Página Inicial  |
+            | Register | Página Registro |
+            | Home     | Página Login    |

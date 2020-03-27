@@ -80,3 +80,26 @@ class Login(Base):
     @property
     def get_message_login_invalid(self):
         return self.driver.find_element_by_xpath(self._message).text
+
+class Registro(Base):
+
+    def __init__(self, driver):
+       Base.__init__(self,driver)
+       self._url = 'http://projectdreamteam.pythonanywhere.com/register'
+       self._email = "email" #ID
+       self._username = "username" #ID
+       self._first_name = "first_name" #ID
+       self._last_name = "last_name" #ID
+       self._password = "password" #ID
+       self.confirm_password = "confirm_password" #ID
+       self._submit = "submit" #ID
+       #self._message = "//div[contains(@class,'alert alert-info')]" #xpath
+
+    def register(self, email, username, first_name, last_name, password):
+        self.driver.find_element_by_id(self._email).send_keys(email)
+        self.driver.find_element_by_id(self._username).send_keys(username)
+        self.driver.find_element_by_id(self._first_name).send_keys(first_name)
+        self.driver.find_element_by_id(self._last_name).send_keys(last_name)
+        self.driver.find_element_by_id(self._password).send_keys(password)
+        self.driver.find_element_by_id(self.confirm_password).send_keys(password)
+        self.driver.find_element_by_id(self._submit).click()

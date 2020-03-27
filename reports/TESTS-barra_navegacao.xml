@@ -1,0 +1,37 @@
+<testsuite errors="0" failures="0" hostname="ret4o-Inspiron-5547" name="barra_navegacao.Barra de navegação" skipped="3" tests="3" time="0.0" timestamp="2020-03-26T00:09:23.431905"><testcase classname="barra_navegacao.Barra de navegação" name="Login presente na barra de navegação e click login" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Login presente na barra de navegação e click login
+    Dado que acesse a pagina inicial ... skipped in 0.000s
+    Então o "Login" deve estar disponivel na página ... skipped in 0.000s
+    Quando clicko em "Login" ... skipped in 0.000s
+    Então devo ser direcionado para página login "Login" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="barra_navegacao.Barra de navegação" name="Register presente na barra de navegação e click register" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Register presente na barra de navegação e click register
+    Dado que acesse a pagina inicial ... skipped in 0.000s
+    Então o "Register" deve estar disponivel na página ... skipped in 0.000s
+    Quando clicko em "Register" ... skipped in 0.000s
+    Então devo ser direcionado para página login "Register" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="barra_navegacao.Barra de navegação" name="Home presente na barra de navegação e click register" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Home presente na barra de navegação e click register
+    Dado que acesse a pagina inicial ... skipped in 0.000s
+    Então o "Home" deve estar disponivel na página ... skipped in 0.000s
+    Quando clicko em "Home" ... skipped in 0.000s
+    Então devo ser direcionado para página login "Home" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

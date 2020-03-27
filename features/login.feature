@@ -1,6 +1,6 @@
 Funcionalidade: Login
 
-@wip
+
 Cenario: Efetuar login sem sucesso
     Dado que acesse a pagina login
     Quando efetuo o login

@@ -1,0 +1,29 @@
+<testsuite errors="0" failures="0" hostname="ret4o-Inspiron-5547" name="login.Login" skipped="0" tests="1" time="2.972365" timestamp="2020-03-26T00:10:24.334850"><testcase classname="login.Login" name="Efetuar login sem sucesso" status="passed" time="2.972365"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @wip
+  Cenario: Efetuar login sem sucesso
+    Dado que acesse a pagina login ... passed in 1.828s
+    Quando efetuo o login ... passed in 1.088s
+      | chave | valor              |
+      | email | fernando@teste.com |
+      | senha | teste              |
+    Então a mensagem deve ser exibida ... passed in 0.056s
+      """
+      Invalid email or password.
+      """
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+que acesse a pagina login
+Status.passed
+efetuo o login
+Status.passed
+a mensagem deve ser exibida
+Status.passed
+
+]]>
+</system-out></testcase></testsuite>

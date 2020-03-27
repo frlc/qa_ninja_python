@@ -9,6 +9,7 @@ verify_ssl = true
 behave = "*"
 selenium = "*"
 ipdb = "*"
+allure-behave = "*"
 
 [requires]
 python_version = "3.6"

@@ -1,0 +1,15 @@
+<testsuite errors="0" failures="0" hostname="ret4o-Inspiron-5547" name="pagina_inicial.Apresentação do sistema" skipped="1" tests="1" time="0.0" timestamp="2020-03-26T00:09:23.435685"><testcase classname="pagina_inicial.Apresentação do sistema" name="Apresentação da marca" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Apresentação da marca
+    Dado que acesse a pagina inicial ... skipped in 0.000s
+    Então o "Project Dream Team" deve ser visualizado ... skipped in 0.000s
+    E o registro deve estar disponivel ... skipped in 0.000s
+      """
+      The best company in the world!
+      """
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
