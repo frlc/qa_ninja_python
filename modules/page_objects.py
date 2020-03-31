@@ -93,7 +93,7 @@ class Registro(Base):
        self._password = "password" #ID
        self.confirm_password = "confirm_password" #ID
        self._submit = "submit" #ID
-       #self._message = "//div[contains(@class,'alert alert-info')]" #xpath
+       self._message = "(//p[contains(@class, 'help-block')])[1]" #xpath
 
     def register(self, email, username, first_name, last_name, password):
         self.driver.find_element_by_id(self._email).send_keys(email)
@@ -103,3 +103,7 @@ class Registro(Base):
         self.driver.find_element_by_id(self._password).send_keys(password)
         self.driver.find_element_by_id(self.confirm_password).send_keys(password)
         self.driver.find_element_by_id(self._submit).click()
+
+    @property
+    def get_message_cadastro_invalid(self):
+        return self.driver.find_element_by_xpath(self._message).text

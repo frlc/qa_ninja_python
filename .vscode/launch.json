@@ -11,7 +11,7 @@
             "console": "integratedTerminal",
             "module": "behave",
             "cwd": "/home/ret4o/qa_ninja_python",
-            "args": ["--no-capture", "--no-skipped", "--tags=@wip"]
+            "args": ["--no-capture", "--no-skipped", "--tags=@registro"]
         }
     ]
 }
