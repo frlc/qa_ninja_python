@@ -71,6 +71,7 @@ class Login(Base):
        self._password = "password" #ID
        self._submit = "submit" #ID
        self._message = "//div[contains(@class,'alert alert-info')]" #xpath
+       self._login_name = "(//a)[4]" #path
     
     def login(self, user, password):
         self.driver.find_element_by_id(self._email).send_keys(user)
@@ -80,6 +81,10 @@ class Login(Base):
     @property
     def get_message_login_invalid(self):
         return self.driver.find_element_by_xpath(self._message).text
+
+    @property
+    def get_text_user_login(self):
+        return self.driver.find_element_by_xpath(self._login_name).text
 
 class Registro(Base):
 

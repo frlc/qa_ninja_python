@@ -11,3 +11,15 @@ Cenario: Efetuar login sem sucesso
         """
         Invalid email or password.
         """
+        
+@registro
+Cenario: Efetuar login com sucesso
+    Dado que acesse a pagina login
+    Quando efetuo o login
+        | chave | valor                |
+        | email | fernando_9@teste.com |
+        | senha | teste123             |
+    Então o nome de usuário deve ser exibido
+        """
+        Hi, fernando_teste_9!
+        """

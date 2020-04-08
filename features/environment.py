@@ -18,8 +18,17 @@ def before_step(context, step):
     ...
 
 def before_tag(context, tag):
-    #print(tag)
-    ...
+    if tag == 'registro':
+        context.execute_steps('''
+            Dado que acesse a pagina de registro
+            Quando efetuo o cadastro
+                | chave            | valor                |
+                | email            | fernando_9@teste.com |
+                | username         | fernando_teste_9     |
+                | first_name       | fernando             |
+                | last_name        | teste                |
+                | password         | teste123             |
+        ''')
 
 def after_all(context):
     context.driver.quit()

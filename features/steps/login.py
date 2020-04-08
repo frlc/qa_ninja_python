@@ -16,3 +16,8 @@ def efetuo_login(context):
 @then('a mensagem deve ser exibida')
 def verifica_mensagem(context):
     assert context.text == context.login.get_message_login_invalid
+
+@then('o nome de usuário deve ser exibido')
+def verifica_usuario_logado(context):
+    sleep(3)
+    assert context.text == context.login.get_text_user_login
