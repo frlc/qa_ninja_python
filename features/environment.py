@@ -3,7 +3,7 @@ from ipdb import spost_mortem
 from allure_behave.hooks import allure_report
 
 def before_all(context):
-    context.driver = webdriver.Chrome("/home/ret4o/Downloads/qaninja-liveclass-master/drivers/chromedriver")
+    context.driver = webdriver.Chrome("xxxx")
 
 def before_feature(context, feature):
     #print(feature.name)
